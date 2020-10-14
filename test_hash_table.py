@@ -36,16 +36,16 @@ class TestHashTable(unittest.TestCase):
         h = HashTable(33)
         self.assertEqual(33, h.size)
 
-    # """
-    # Basic API
-    # """
+    """
+    Basic API
+    """
 
-    # def test_simple_insertion(self):
-    #     h = HashTable()
-    #     try:
-    #         h['foo'] = 'bar'
-    #     except TypeError:
-    #         self.fail("HashTable has no __setitem__ implementation")
+    def test_simple_insertion(self):
+        h = HashTable()
+        try:
+            h['foo'] = 'bar'
+        except TypeError:
+            self.fail("HashTable has no __setitem__ implementation")
 
     # def test_simple_retrieval(self):
     #     h = HashTable()

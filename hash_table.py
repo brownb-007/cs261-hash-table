@@ -8,4 +8,8 @@ class HashTable:
 
     def __init__(self, size=10):
         self.size = size
+        self.data = [[] for i in range(self.size)]
+
+    def __setitem__(self, key, value):
+        
     pass
