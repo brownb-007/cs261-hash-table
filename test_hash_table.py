@@ -84,18 +84,18 @@ class TestHashTable(unittest.TestCase):
         expected = [ [], [], [] ]
         self.assertEqual(expected, h.data)
 
-    # """
-    # Insertion Basics
-    # """
+    """
+    Insertion Basics
+    """
 
-    # def test_insert_one(self):
-    #     """
-    #     Inserting a k-v pair stores it as a two-element array in the list at
-    #     the right index.
-    #     """
-    #     h = HashTable(3)
-    #     h[11] = 'bar' # 11 is the key, not an index :)
-    #     self.assertEqual([[11, 'bar']], h.data[2])
+    def test_insert_one(self):
+        """
+        Inserting a k-v pair stores it as a two-element array in the list at
+        the right index.
+        """
+        h = HashTable(3)
+        h[11] = 'bar' # 11 is the key, not an index :)
+        self.assertEqual([[11, 'bar']], h.data[2])
 
     # """
     # Retrieval Basics
