@@ -76,13 +76,13 @@ class TestHashTable(unittest.TestCase):
         h = HashTable()
         self.assertEqual(list, type(h.data))
 
-    # def test_data_contents(self):
-    #     """
-    #     A HashTable data array contains empty lists.
-    #     """
-    #     h = HashTable(3)
-    #     expected = [ [], [], [] ]
-    #     self.assertEqual(expected, h.data)
+    def test_data_contents(self):
+        """
+        A HashTable data array contains empty lists.
+        """
+        h = HashTable(3)
+        expected = [ [], [], [] ]
+        self.assertEqual(expected, h.data)
 
     # """
     # Insertion Basics
