@@ -65,16 +65,16 @@ class TestHashTable(unittest.TestCase):
         self.assertEqual(1, h.hash(34))
         self.assertEqual(hash("fake key") % 33, h.hash("fake key"))
 
-    # """
-    # Data Storage
-    # """
+    """
+    Data Storage
+    """
 
-    # def test_data(self):
-    #     """
-    #     A HashTable has an internal array for storing k-v pairs.
-    #     """
-    #     h = HashTable()
-    #     self.assertEqual(list, type(h.data))
+    def test_data(self):
+        """
+        A HashTable has an internal array for storing k-v pairs.
+        """
+        h = HashTable()
+        self.assertEqual(list, type(h.data))
 
     # def test_data_contents(self):
     #     """
