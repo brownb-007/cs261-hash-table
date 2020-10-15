@@ -116,20 +116,20 @@ class TestHashTable(unittest.TestCase):
         h['foo'] = 'bar'
         self.assertEqual('bar', h['foo'])
 
-    # """
-    # Insertion
-    # """
+    """
+    Insertion
+    """
 
-    # def test_insert_two(self):
-    #     """
-    #     Inserting two k-v pairs stores them as two-element arrays in the list
-    #     at the right index.
-    #     """
-    #     h = HashTable(3)
-    #     h[9] = 'foo' # Using numbers as keys for visibility.
-    #     h[11] = 'bar'
-    #     self.assertEqual([[9, 'foo']], h.data[0])
-    #     self.assertEqual([[11, 'bar']], h.data[2])
+    def test_insert_two(self):
+        """
+        Inserting two k-v pairs stores them as two-element arrays in the list
+        at the right index.
+        """
+        h = HashTable(3)
+        h[9] = 'foo' # Using numbers as keys for visibility.
+        h[11] = 'bar'
+        self.assertEqual([[9, 'foo']], h.data[0])
+        self.assertEqual([[11, 'bar']], h.data[2])
 
     # def test_insert_existing(self):
     #     """
