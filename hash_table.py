@@ -26,5 +26,4 @@ class HashTable:
     def hash(self, key):
         return hash(key) % self.size
 
-    
     pass

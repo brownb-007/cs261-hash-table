@@ -135,7 +135,7 @@ class TestHashTable(unittest.TestCase):
         """
         Inserting a k-v pair where the key already exists overwrites the old value.
         """
-        h = HashTable(3)
+        h = HashTable(3) 
         h[9] = 'foo' # Using numbers as keys for visibility.
         h[9] = 'bar'
         self.assertEqual([[9, 'bar']], h.data[0])
