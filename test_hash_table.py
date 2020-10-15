@@ -47,12 +47,12 @@ class TestHashTable(unittest.TestCase):
         except TypeError:
             self.fail("HashTable has no __setitem__ implementation")
 
-    # def test_simple_retrieval(self):
-    #     h = HashTable()
-    #     try:
-    #         _ = h['foo']
-    #     except TypeError:
-    #         self.fail("HashTable has no __getitem__ implementation")
+    def test_simple_retrieval(self):
+        h = HashTable()
+        try:
+            _ = h['foo']
+        except TypeError:
+            self.fail("HashTable has no __getitem__ implementation")
 
     # def test_hash(self):
     #     """
