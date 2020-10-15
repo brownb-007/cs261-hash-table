@@ -140,15 +140,15 @@ class TestHashTable(unittest.TestCase):
         h[9] = 'bar'
         self.assertEqual([[9, 'bar']], h.data[0])
 
-    # def test_insert_collision(self):
-    #     """
-    #     Inserting a k-v pair where the key has the same hash as an existing key
-    #     appends the new k-v pair to the list at the appropriate index.
-    #     """
-    #     h = HashTable(3)
-    #     h[9] = 'foo'
-    #     h[3] = 'bar'
-    #     self.assertEqual([[9, 'foo'], [3, 'bar']], h.data[0])
+    def test_insert_collision(self):
+        """
+        Inserting a k-v pair where the key has the same hash as an existing key
+        appends the new k-v pair to the list at the appropriate index.
+        """
+        h = HashTable(3)
+        h[9] = 'foo'
+        h[3] = 'bar'
+        self.assertEqual([[9, 'foo'], [3, 'bar']], h.data[0])
 
     # """
     # Deletion

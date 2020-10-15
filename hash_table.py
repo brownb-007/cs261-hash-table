@@ -15,6 +15,7 @@ class HashTable:
         for key_and_value in self.data[placeholder]:
             if key_and_value[0] == key:
                 key_and_value[1] = value
+                return
         self.data[placeholder].append([key, value])
 
     def __getitem__(self, key):
