@@ -54,16 +54,16 @@ class TestHashTable(unittest.TestCase):
         except TypeError:
             self.fail("HashTable has no __getitem__ implementation")
 
-    # def test_hash(self):
-    #     """
-    #     Hash function returns hash no greater than its size - 1.
-    #     """
-    #     h = HashTable(33)
-    #     self.assertEqual(0, h.hash(0))
-    #     self.assertEqual(32, h.hash(32))
-    #     self.assertEqual(0, h.hash(33))
-    #     self.assertEqual(1, h.hash(34))
-    #     self.assertEqual(hash("fake key") % 33, h.hash("fake key"))
+    def test_hash(self):
+        """
+        Hash function returns hash no greater than its size - 1.
+        """
+        h = HashTable(33)
+        self.assertEqual(0, h.hash(0))
+        self.assertEqual(32, h.hash(32))
+        self.assertEqual(0, h.hash(33))
+        self.assertEqual(1, h.hash(34))
+        self.assertEqual(hash("fake key") % 33, h.hash("fake key"))
 
     # """
     # Data Storage

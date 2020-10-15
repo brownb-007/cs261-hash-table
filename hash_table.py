@@ -11,15 +11,15 @@ class HashTable:
         self.data = [[] for i in range(size)]
 
     def __setitem__(self, key, value):
-        index = self.hash(key)
-        for key_and_value in self.data[index]:
+        placeholder = self.hash(key)
+        for key_and_value in self.data[placeholder]:
             if key_and_value[0] == key:
                 key_and_value[1] = value
-        self.data[index].append([key, value])
+        self.data[placeholder].append([key, value])
 
     def __getitem__(self, key):
-        index = self.hash(key)
-        for key_and_value in self.data[index]:
+        placeholder = self.hash(key)
+        for key_and_value in self.data[placeholder]:
             if key_and_value[0] == key:
                 return key_and_value[1]
 
