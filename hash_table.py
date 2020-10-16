@@ -44,4 +44,11 @@ class HashTable:
                 keys.append(key[0])
         return keys
 
+    def values(self): 
+        values = [] 
+        for i in range(self.size):
+            for value in self.data[i]:
+                values.append(value[1])
+        return values
+
     pass
