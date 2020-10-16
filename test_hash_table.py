@@ -176,23 +176,23 @@ class TestHashTable(unittest.TestCase):
         h.clear()
         self.assertEqual([[], [], []], h.data)
 
-    # def test_initial_keys(self):
-    #     """
-    #     A HashTable initially has no keys.
-    #     """
-    #     h = HashTable()
-    #     self.assertEqual([], h.keys())
+    def test_initial_keys(self):
+        """
+        A HashTable initially has no keys.
+        """
+        h = HashTable()
+        self.assertEqual([], h.keys())
 
-    # def test_keys(self):
-    #     """
-    #     A HashTable can produce a list of its keys.
-    #     """
-    #     h = HashTable()
-    #     h['foo'] = 'bar'
-    #     h['baz'] = 'qux'
-    #     keys = h.keys()
-    #     keys.sort()
-    #     self.assertEqual(['baz', 'foo'], keys)
+    def test_keys(self):
+        """
+        A HashTable can produce a list of its keys.
+        """
+        h = HashTable()
+        h['foo'] = 'bar'
+        h['baz'] = 'qux'
+        keys = h.keys()
+        keys.sort()
+        self.assertEqual(['baz', 'foo'], keys)
 
 
     # def test_initial_values(self):
