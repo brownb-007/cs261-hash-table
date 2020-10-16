@@ -27,4 +27,11 @@ class HashTable:
     def hash(self, key):
         return hash(key) % self.size
 
+    def delete(self, key):
+        placeholder = self.hash(key)
+        for key_and_value in self.data[placeholder]:
+            if key_and_value[0] == key:
+                self.data[placeholder].remove(key_and_value)
+
+
     pass

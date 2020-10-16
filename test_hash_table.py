@@ -150,18 +150,18 @@ class TestHashTable(unittest.TestCase):
         h[3] = 'bar'
         self.assertEqual([[9, 'foo'], [3, 'bar']], h.data[0])
 
-    # """
-    # Deletion
-    # """
+    """
+    Deletion
+    """
 
-    # def test_delete(self):
-    #     """
-    #     A deleted k-v pair should not be retrievable.
-    #     """
-    #     h = HashTable(3)
-    #     h['foo'] = 'bar'
-    #     h.delete('foo')
-    #     self.assertEqual(None, h['foo'])
+    def test_delete(self):
+        """
+        A deleted k-v pair should not be retrievable.
+        """
+        h = HashTable(3)
+        h['foo'] = 'bar'
+        h.delete('foo')
+        self.assertEqual(None, h['foo'])
 
     # """
     # Misc. Methods
