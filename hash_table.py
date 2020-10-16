@@ -33,5 +33,8 @@ class HashTable:
             if key_and_value[0] == key:
                 self.data[placeholder].remove(key_and_value)
 
+    def clear(self):
+        self.data.clear()
+        self.data = [[] for i in range(self.size)]
 
     pass
